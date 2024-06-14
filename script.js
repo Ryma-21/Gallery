@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (isFilled) {
       // If already filled, toggle back to empty
       heart.classList.remove("filled");
-      heart.setAttribute("src", "/img/heart.png");
+      heart.setAttribute("src", "img/heart.png");
     } else {
       // If empty, toggle to filled
       heart.classList.add("filled");
-      heart.setAttribute("src", "/img/heart filled.png");
+      heart.setAttribute("src", "img/heart filled.png");
     }
   };
 
