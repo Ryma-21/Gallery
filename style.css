@@ -125,3 +125,10 @@ footer {
   color: rgb(235, 233, 233);
   margin-top: 40px;
 }
+p::selection,
+h1::selection,
+h2::selection,
+h4::selection {
+  color: aliceblue;
+  background-color: rgb(82, 15, 146);
+}
