@@ -24,21 +24,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const handleShowMore = (event) => {
     const showMoreButton = event.target;
     const descriptionDiv = showMoreButton.parentElement;
-    const paragraph = descriptionDiv.querySelector("p");
-
     // Toggle the 'less' class on the description div
     if (descriptionDiv.classList.contains("less")) {
       // Expand the description
       descriptionDiv.classList.remove("less");
       descriptionDiv.classList.add("more");
       showMoreButton.textContent = "show less";
-      console.log(descriptionDiv.classList);
     } else {
       // Collapse the description
       descriptionDiv.classList.remove("more");
       descriptionDiv.classList.add("less");
       showMoreButton.textContent = "show more";
-      console.log(descriptionDiv.classList);
     }
   };
 
